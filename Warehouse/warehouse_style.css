@@ -433,8 +433,8 @@ header {
 /* --------------------Lower Navigation----------------- */
 
 .lower-nav {
-    width: 100vw;
-    width: 100dvw;
+    width: 100%;
+    /* width: 100dvw; */
     height: auto;
 }
 
@@ -445,7 +445,7 @@ header {
     padding: 20px 5%;
     background-color: #ffffff;
     /* border: 1px solid #000000; */
-    width: 60%;
+    width: 67%;
     height: auto;
     margin: 20px auto;
     font-family: 'Arial', sans-serif;
@@ -501,8 +501,8 @@ header {
     justify-content: center;
     align-items: center;
     /* border: 1px solid #000000; */
-    padding: 20px 0 15px;
-    margin-top: 10px;
+    padding: 50px 0 15px;
+    margin-top: 2rem;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
 }
 .intro-child1 {
