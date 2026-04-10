@@ -570,6 +570,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1.2rem;
     align-items: center;
     /* border: 1px solid #000000; */
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
