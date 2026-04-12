@@ -598,6 +598,19 @@ header {
     justify-content: center;
     text-align: center;
     /* border: 1px solid #000000; */
+    display: flex;
+}
+.why-header-head-txt{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.why-header-head-txt::before, .why-header-head-txt::after{
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: #3b82f6;
 }
 .why-header-subtxt{
     max-width: 80%;
