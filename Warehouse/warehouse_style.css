@@ -910,3 +910,168 @@ header {
     overflow: hidden;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet & Smaller Desktop (1024px and below) */
+@media (max-width: 1024px) {
+
+    .intro-parent,
+    .why-main-container,
+    .our-services-cont,
+    .how-work-parent,
+    .lower-nav-container {
+        width: 90%;
+        /* Expand width on smaller screens */
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns for footer instead of 4 */
+    }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+
+    /* Navigation Adjustments */
+    .first_nav_bar {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .f_right_nav {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show the hamburger */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        /* Hide off-screen */
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        left: 0;
+        /* Slide in when active */
+    }
+
+    /* Hero Section (Strategic Warehousing) */
+    .intr-heading {
+        left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .intr-child {
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .int-promices ul {
+        justify-content: center;
+    }
+
+    .intr-btn {
+        width: 120px;
+    }
+
+    /* Side-by-Side Sections (Intro & How it works) */
+    .intro-parent,
+    .how-work-parent {
+        flex-direction: column;
+        /* Stack image on top of text */
+        text-align: center;
+    }
+
+    .intro-child1,
+    .intro-child2,
+    .how-work-child1,
+    .how-work-child2 {
+        width: 100%;
+    }
+
+    .intro-child2,
+    .how-work-child2 {
+        order: -1;
+        /* Move images to the top of the text */
+        margin-bottom: 20px;
+    }
+
+    /* Lower Nav (Scrollable on mobile) */
+    .lower-nav-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* Why Us Section */
+    .why-pic-child {
+        width: 50%;
+        /* 2 per row on mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Services Section */
+    .our-services-jr-cont {
+        height: auto;
+    }
+
+    .our-services-child-body {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .our-services-jr-child {
+        max-width: 100%;
+        /* Cards take full width */
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* 1 column for footer */
+        text-align: center;
+    }
+
+    .footer-column h3::after {
+        margin: 10px auto;
+        /* Center the blue line */
+    }
+
+    .footer-logo,
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .why-pic-child {
+        width: 100%;
+        /* Stack everything 1 per row */
+    }
+
+    .f_right_nav li:not(:last-child) {
+        display: none;
+        /* Hide secondary links on tiny screens to save space */
+    }
+}
