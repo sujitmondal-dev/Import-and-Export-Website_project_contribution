@@ -422,6 +422,8 @@
 
     </main>
     <script>
+        // ----------Lower Navigation Active State Logic----------
+
         // Simple logic: When a link is clicked, move the 'active' class
         const links = document.querySelectorAll('.lower-nav-items');
 
@@ -433,7 +435,17 @@
                 this.classList.add('active');
             });
         });
+        
+        // -----------New Hamburger Menu Logic for Mobile-----------
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     </script>
+    
 </body>
 
 </html>
