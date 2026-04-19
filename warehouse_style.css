@@ -1258,27 +1258,6 @@ header {
     cursor: pointer;
 }
 
-/* .w-btn-secondary {
-    display: inline-block;
-    width: 6vw;
-    width: 6dvw;
-    height: 4vh;
-    height: 4dvh;
-    text-align: center;
-    align-content: center;
-    background: linear-gradient(135deg, #00d4ff 0%, #2e8ef5 100%);
-    opacity: 1;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    font-size: 0.94rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: none;
-    border: 1px solid rgb(0, 140, 255);
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-} */
 
 .w-btn:hover {
     transform: translateY(-3px);
@@ -1341,23 +1320,7 @@ header {
         padding: 20px 0;
         gap: 20px;
     }
-
-    /* .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        max-width: 300px;
-        height: 100vh;
-        background: white;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        transition: right 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    } */
-
+    
     .nav-links.active {
         left: 0;
         /* Slide in when active */
